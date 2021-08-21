@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taller_86_WPF", "Taller_86_WPF.csproj", "{20364B78-74DE-4DC9-B661-51CF9F628AF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20364B78-74DE-4DC9-B661-51CF9F628AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20364B78-74DE-4DC9-B661-51CF9F628AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20364B78-74DE-4DC9-B661-51CF9F628AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20364B78-74DE-4DC9-B661-51CF9F628AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C96B285F-C035-49FF-A35B-46B5CDB01ED8}
+	EndGlobalSection
+EndGlobal

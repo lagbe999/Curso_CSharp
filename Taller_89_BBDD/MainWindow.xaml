@@ -1,0 +1,34 @@
+﻿<Window x:Class="Taller_89_BBDD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Taller_89_BBDD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="1000" WindowState="Normal" Background="Beige" Activated="Window_Activated">
+    <Grid Margin="0,10,3.667,-0.333">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="734*"/>
+            <ColumnDefinition Width="110*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Selecciona un Cliente:" FontSize="16" FontWeight="Medium" Width="174" HorizontalAlignment="Left"/>
+        <ListBox Name="listaClientes" Background="White" Foreground="Black"  HorizontalAlignment="Left" Height="346" Margin="9,31,0,0" VerticalAlignment="Top" Width="190"  MouseDoubleClick="listaClientes_MouseDoubleClick"/>
+        <Label Name="Pedidos" Content="Pedidos del cliente" HorizontalAlignment="Left" Margin="511,39,0,0" VerticalAlignment="Top" Width="162" Height="26"/>
+        <ListBox Name="pedidosCliente" HorizontalAlignment="Left" Height="315" Margin="496,62,0,0" VerticalAlignment="Top" Width="162"/>
+        <ListBox Name="todosPedidos" HorizontalAlignment="Left" Height="315" Margin="663,62,0,0" VerticalAlignment="Top" Width="202" Grid.ColumnSpan="2"/>
+        <Label Name="labelTodosPedidos" Content="Lista de Pedidos" HorizontalAlignment="Left" Margin="673,39,0,0" VerticalAlignment="Top" Width="104" Height="26"/>
+        <Button Name="Borrar" Content="Borrar Pedido" Grid.Column="1" HorizontalAlignment="Left" Margin="26.667,78,0,0" VerticalAlignment="Top" Width="85" Height="24" Click="Borrar_Click"/>
+        <Button Name="NuevoCliente" Content="Nuevo Cliente" Grid.Column="0" HorizontalAlignment="Left" Margin="218,340,0,0" VerticalAlignment="Top" Width="85" Height="24" Click="NuevoCliente_Click"/>
+        <Label Content="Nombre" Margin="215,35,315.333,542" Grid.Column="0"/>
+        <TextBox Name="txtNombreCli"  Margin="218,70,376.333,511" Grid.Column="0" Height="30"/>
+        <Label Content="Dirección" Margin="216,112,314.333,469" Grid.Column="0"/>
+        <TextBox Name="txtDireccion"  Margin="218,148,376.333,433" Grid.Column="0" Height="30" RenderTransformOrigin="0.482,1.089"/>
+        <Label Content="Población" Margin="218,183,331.333,395" Grid.Column="0"/>
+        <TextBox x:Name="txtPoblacion"  Margin="220,222,374.333,359" Grid.Column="0" Height="30" RenderTransformOrigin="0.482,1.089"/>
+        <Label Content="Telefono" Margin="218,257,331.333,318" Grid.Column="0"/>
+        <TextBox Name="txtTelefono"  Margin="218,299,375.333,282" Grid.Column="0" Height="30" RenderTransformOrigin="0.482,1.089"/>
+        <Button Name="BorrarCliente" Content="Borrar Cliente" Grid.Column="0" HorizontalAlignment="Left" Margin="392,340,0,0" VerticalAlignment="Top" Width="85" Height="24" Click="BorrarCliente_Click"/>
+        <Button Name="ActualizaCliente" Content="Actualizar" Grid.Column="0" HorizontalAlignment="Left" Margin="308,340,0,0" VerticalAlignment="Top" Width="79" Height="24" Click="ActualizaCliente_Click" RenderTransformOrigin="1.357,4"/>
+    </Grid>
+</Window>

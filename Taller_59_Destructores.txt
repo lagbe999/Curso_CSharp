@@ -1,0 +1,3 @@
+Este es un ejemplo de Manejo de Ficheros en C#
+Veremos como Abrir un Fichero Externo 
+Manejo de Destructores

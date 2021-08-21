@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taller_46_Herencia-Polimorfismo", "Taller_46_Herencia-Polimorfismo.csproj", "{E33B816B-E692-45BA-8F31-70DC9143D74C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E33B816B-E692-45BA-8F31-70DC9143D74C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E33B816B-E692-45BA-8F31-70DC9143D74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E33B816B-E692-45BA-8F31-70DC9143D74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E33B816B-E692-45BA-8F31-70DC9143D74C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1744FA84-7BAA-4728-81AF-AB8BCD848F64}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+﻿<Window x:Class="Taller_89_BBDD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Taller_89_BBDD"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="851.013" WindowState="Maximized" Background="Beige">
+    <Grid Margin="0,10,3.667,-0.333">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="734*"/>
+            <ColumnDefinition Width="110*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Selecciona un Cliente:" FontSize="16" FontWeight="Medium" Width="174" HorizontalAlignment="Left" Margin="5,0,0,0"></Label>
+        <ListBox Name="listaClientes" Background="White" Foreground="Black"  HorizontalAlignment="Left" Height="346" Margin="25,31,0,0" VerticalAlignment="Top" Width="154" SelectionChanged="listaClientes_SelectionChanged"/>
+        <Label Name="Pedidos" Content="Pedidos del cliente" HorizontalAlignment="Left" Margin="420,30,0,0" VerticalAlignment="Top" Width="162" Height="27"/>
+        <ListBox Name="pedidosCliente" HorizontalAlignment="Left" Height="315" Margin="420,62,0,0" VerticalAlignment="Top" Width="162"/>
+        <ListBox Name="todosPedidos" HorizontalAlignment="Left" Height="315" Margin="587,62,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Name="labelTodosPedidos" Content="Lista de Pedidos" HorizontalAlignment="Left" Margin="587,30,0,0" VerticalAlignment="Top" Width="104" Height="26"/>
+        <Button Name="Borrar" Content="Borrar Pedido" Grid.Column="1" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="85" Height="24" Click="Borrar_Click"/>
+        <Button Name="NuevoCliente" Content="Nuevo Cliente" Grid.Column="1" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="85" Height="24" Click="NuevoCliente_Click"/>
+        <Label Content="Nombre Cliente" Margin="184,31,260.333,477" Grid.Column="0"/>
+        <TextBox Name="txtNombreCli"  Margin="198,57,458.333,549" RenderTransformOrigin="0.5,0.5" >
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+    </Grid>
+</Window>

@@ -1,0 +1,54 @@
+﻿<Window x:Class="Taller_86_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Taller_86_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized" Background="LightBlue">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="5">
+            <TextBlock Text="SEMAFORO" FontSize="45"  Foreground="Crimson" HorizontalAlignment="Center"></TextBlock>
+            
+        </StackPanel>
+        <StackPanel Grid.Row="1" Background="Beige">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                    <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0" Margin="10">
+                    <Label Content="Selecciona una opción:"></Label>
+                    <RadioButton Name="ColorRojo"   Margin="7" Checked="ColorRojo_Checked">
+                        <TextBlock Text="Rojo" FontSize="15" Foreground="Crimson"></TextBlock>
+                    </RadioButton>
+                    <RadioButton Name="ColorAmarillo"   Margin="7" Checked="ColorAmarillo_Checked">
+                        <TextBlock Text="Amarillo" FontSize="15" Foreground="Gold"></TextBlock>
+                    </RadioButton>
+                    <RadioButton Name="ColorVerde"   Margin="7" Checked="ColorVerde_Checked">
+                        <TextBlock Text="Verde" FontSize="15" Foreground="Green"></TextBlock>
+                    </RadioButton>
+
+                </StackPanel>
+                <StackPanel Grid.Column="1" Margin="5">
+                    <Image Name="SemaforoVacio" Source="D:\LAGBE\Herramientas\Desarrollo\Lenguajes de Programacion\Plataforma .Net\C#\Taller_86_WPF\semaforo_sin_colores.jpeg" Width="60" Height="100" Stretch="UniformToFill"></Image>
+                    <Image Name="SemaforoRojo"  Source="D:\LAGBE\Herramientas\Desarrollo\Lenguajes de Programacion\Plataforma .Net\C#\Taller_86_WPF\semaforo_rojo.jpg" Width="60" Height="100" Stretch="UniformToFill"></Image>
+                    <Image Name="SemaforoAmarillo" Source="D:\LAGBE\Herramientas\Desarrollo\Lenguajes de Programacion\Plataforma .Net\C#\Taller_86_WPF\semaforo_amarillo.jpg" Width="60" Height="100" Stretch="UniformToFill"></Image>
+                    <Image Name="SemaforoVerde" Source="D:\LAGBE\Herramientas\Desarrollo\Lenguajes de Programacion\Plataforma .Net\C#\Taller_86_WPF\semaforo_verde.jpg" Width="60" Height="100" Stretch="UniformToFill"></Image>
+
+
+                </StackPanel>
+                
+                
+            </Grid>
+            
+            
+        </StackPanel>        
+        
+        
+     </Grid>
+</Window>

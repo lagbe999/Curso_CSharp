@@ -1,0 +1,9 @@
+Cadena de Conexión Base de Datos GestioPedidos - Curso C# 
+
+Data Source=DESKTOP-NS1KKS9\SQLEXPRESS;Initial Catalog=GestionPedidos;Integrated Security=True
+
+Archivo Conexion: GestionPedidosConnectionString
+
+Nombre DataSet:	GestionPedidosDataSet
+
+

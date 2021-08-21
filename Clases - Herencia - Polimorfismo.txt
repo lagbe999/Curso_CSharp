@@ -1,0 +1,132 @@
+using System;
+
+namespace Taller_46_Polimorfismo
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Taller C# 46 - Herencia\n");
+
+            Avion ObjAvion = new Avion("Rocinante");
+
+            Vehiculo ObjVehiculo = new Vehiculo("Juan");
+
+            Coche ObjCoche= new Coche("Chita");
+
+            ObjAvion.Galopar();
+
+            ObjVehiculo.Conducir();
+
+            ObjCoche.Trepar();
+
+            ObjAvion.getNombre();
+
+            ObjVehiculo.getNombre();
+
+            ObjCoche.getNombre();
+
+
+
+            // ------------------ Principio de Sustitucion / Herencia --------------------------
+
+            Console.WriteLine("Taller C# 46 - Herencia - Principio de Sustitucón\n");
+
+            Vehiculo animal = new Avion("Bucefalo");
+
+            Vehiculo persona = new Vehiculo("Manuel");
+
+            Vehiculo ObjVehiculo = new Vehiculo("Engendro");
+
+            Avion ObjCebra = new Avion("Juventus");
+
+            ObjVehiculo = ObjCebra;   // AQUI Se Aplica el Principio de Sustitucion 
+
+            Object miAnimal = new Avion("Platinum");
+
+            Object miPersona = new Vehiculo("José");
+
+            Object miCoche = new Coche("Makacus");
+
+            Vehiculo[] collecionAnimales = new Vehiculo[3];
+
+            collecionAnimales[0] = ObjAvion;
+
+            collecionAnimales[1] = ObjVehiculo;
+
+            collecionAnimales[2] = ObjCoche;
+
+            collecionAnimales[1].getNombre();
+
+            // ------------------Fin Principio de Sustitucion--------------------------
+
+            // ------------------ Principio de Polimorfismo / Herencia --------------------------
+
+            Console.WriteLine("Taller C# 46 - Herencia - Polimorfismo\n");
+
+            for (int i = 0; i < 3; i++)
+            {
+                collecionAnimales[i].Conducir();
+            }
+
+            // ------------------ Fin Principio de Polimorfismo / Herencia --------------------------
+
+        }
+    }
+
+    class Vehiculo
+    {
+        public Vehiculo(string nombre)
+        {
+            nombreVehiculo = nombre;
+        }
+        public void ArrancarMotor()
+        {
+            Console.WriteLine("Soy de La Clase Vehiculo y Soy Capaz de Arrancar Motor");
+        }
+
+        public virtual void Conducir()    // Virtual Indica que todas las SubClases deberan tener un metodo Conducir pero con alguna modificacion.
+        {
+            Console.WriteLine("Soy de La Clase Vehiculo y Puedo Ser Conducido ");
+        }
+
+        public void PararMotor()
+        {
+            Console.WriteLine("Soy de La Clase Vehiculo y Soy Capaz de Parar Motor");
+        }
+
+        public void getNombre()
+        {
+            Console.WriteLine("El Nombre del Vehiculo es "+nombreVehiculo);
+        }
+        private string nombreVehiculo;
+    }
+
+    class Avion : Vehiculo
+    {
+        public Avion(string nombreAvion) : base(nombreAvion) 
+        {
+		Console.Writeline("El Nombre del Avion es "+nombreAvion);        
+        }
+
+        public override void Conducir()
+        {
+            Console.WriteLine("Soy de Clase Avion y Puedo Ser Conducido Por Un Piloto");
+        }
+
+    }
+
+    class Coche : Vehiculo
+    {
+        
+        public Coche(string nombreCoche) : base(nombreCoche)
+        {
+		Console.Writeline("El Nombre del Avion es "+nombreCoche);        
+        }
+
+        public override void Conducir() // Override Indica que este Metodo es una MODIFICACION del Metodo Conducir Heredado de la SuperClase Vehiculo.
+        {
+            Console.WriteLine("Soy de Clase Coche y Puedo Ser Conducido por un Chofer");
+        }
+    }
+}

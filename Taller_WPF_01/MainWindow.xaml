@@ -1,0 +1,14 @@
+﻿<Window x:Class="Taller_WPF_01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Taller_WPF_01"
+        mc:Ignorable="d"
+        Title="Taller WPF - 01" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="393,204,0,0" TextWrapping="Wrap" Text="EJEMPLO TEXTO" VerticalAlignment="Top"/>
+        <Button Content="Ejemplo Botón" HorizontalAlignment="Left" Margin="404,269,0,0" VerticalAlignment="Top" Width="100" Height="40.6666666666667" FontSize="12"/>
+
+    </Grid>
+</Window>

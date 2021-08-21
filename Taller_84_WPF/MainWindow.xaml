@@ -1,0 +1,69 @@
+﻿<Window x:Class="Taller_84_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Taller_84_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
+    <Grid Margin="5" Background="LightBlue" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Label Content="Ciudades" FontSize="20" FontWeight="SemiBold"></Label>
+            <ComboBox Name="Municipios" HorizontalAlignment="Stretch">
+                <ComboBox.ItemTemplate> 
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding NombreCiudad}" FontSize="15"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Column="2" Margin="5">
+            <Label Content="Países" FontSize="20" FontWeight="SemiBold"></Label>
+            <CheckBox Name="Todas" IsThreeState="True" Checked="Todas_Checked" Unchecked="Todas_Unchecked">Agregar todas las ciidades</CheckBox>
+            <StackPanel Margin="15">
+                <CheckBox Name="Madrid" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Madrid</CheckBox>
+                <CheckBox Name= "Barcelona" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Barcelona</CheckBox>
+                <CheckBox Name= "Sevilla" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Sevilla</CheckBox>
+                <CheckBox Name= "Valencia" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Valencia</CheckBox>
+                <CheckBox Name= "LaCoruna" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">La Coruña</CheckBox>
+                <CheckBox Name= "Vigo" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Vigo</CheckBox>
+                <CheckBox Name= "Bilbao" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Bilbao</CheckBox>
+                <CheckBox Name= "Tenerife" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Tenerife</CheckBox>
+                <CheckBox Name= "Murcia" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Murcia</CheckBox>
+                <CheckBox Name= "SanSebastian" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">SanSebastian</CheckBox>
+                <CheckBox Name= "Canarias" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Canarias</CheckBox>
+                <CheckBox Name= "Alicante" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Alicante</CheckBox>
+                <CheckBox Name= "Almeria" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Almeria</CheckBox>
+                <CheckBox Name= "Alaves" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Alaves</CheckBox>
+                <CheckBox Name= "Burgos" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Burgos</CheckBox>
+                <CheckBox Name= "Cadiz" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Cadiz</CheckBox>
+                <CheckBox Name= "Cartagena" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Cartagena</CheckBox>
+                <CheckBox Name= "Cordova" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Cordova</CheckBox>
+                <CheckBox Name= "Gijon" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Gijon</CheckBox>
+                <CheckBox Name= "Granada" Checked="Algunas_Checked">Granada</CheckBox>
+                <CheckBox Name= "Malaga" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Malaga</CheckBox>
+                <CheckBox Name= "Betis" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Betis</CheckBox>
+                <CheckBox Name= "Jerez" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Jerez</CheckBox>
+                <CheckBox Name= "Marbella" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Marbella</CheckBox>
+                <CheckBox Name= "Oviedo" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Oviedo</CheckBox>
+                <CheckBox Name= "Pamplona" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Pamplona</CheckBox>
+                <CheckBox Name= "Santander" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Santander</CheckBox>
+                <CheckBox Name= "Tarragona" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Tarragona</CheckBox>
+                <CheckBox Name= "Toledo" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked">Toledo</CheckBox>
+                <CheckBox Name= "Zaragoza" Checked="Algunas_Checked" Unchecked="Algunas_Unchecked"  >Zaragoza</CheckBox>
+
+
+
+            </StackPanel>
+            
+             
+        </StackPanel>
+    </Grid>
+</Window>
